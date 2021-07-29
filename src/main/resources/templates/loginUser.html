@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<!-- 今回のサンプルで使用しているCSS（bootstrap）の読み込み -->
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+			integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+			crossorigin="anonymous">
+		<title>output</title>
+	</head>
+	<body>
+		<div class="login align-items-center py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 col-lg-8 mx-auto">
+						<h3 class="login-heading my-4">LOGIN</h3>
+						<form action="doLogin" method="post">
+							<!-- ログインID -->
+							<div class="form-label-group">
+								<label for="id">Login ID</label>
+								<input type="text" id="id"
+									   name="loginId"
+									   class="form-control">
+							</div>
+							<!-- パスワード -->
+							<div class="form-label-group">
+								<label for="password">Password</label>
+								<input type="password" id="password"
+									   name="loginPassword"
+									   class="form-control">
+							</div>
+							<button class="btn btn-lg btn-primary btn-block btn-login font-weight-bold mb-2"
+									type="submit">
+								ログイン
+							</button>
+						</form>
+						<button class="btn btn-lg btn-secondary btn-block btn-login font-weight-bold mb-2"
+								onclick="location.href='joinUs'">
+							会員登録
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

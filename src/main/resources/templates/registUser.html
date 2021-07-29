@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<!-- 今回のサンプルで使用しているCSS（bootstrap）の読み込み -->
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+			integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+			crossorigin="anonymous">
+		<title>output</title>
+	</head>
+	<body>
+		<div class="login align-items-center py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 col-lg-8 mx-auto">
+						<h3 class="login-heading my-4">REGIST</h3>
+						<form class="row g-3" action="regist" method="post">
+							<div class="col-12">
+								<label for="inputEmail" class="form-label">EMail</label>
+								<input type="text" class="form-control" id="inputEmail" name="userEmail" placeholder="Input your email">
+							</div>
+							<div class="col-12">
+								<label for="inputName" class="form-label">Name</label>
+								<input type="text" class="form-control" id="inputName" name="userName" placeholder="Input your name">
+							</div>
+							<div class="col-md-6">
+								<label for="inputPassword" class="form-label">Password</label>
+								<input type="password" class="form-control" id="inputPassword" name="userPassword" placeholder="Input your password">
+							</div>
+							<div class="col-md-6">
+								<label for="inputPasswordcheck" class="form-label">PasswordCheck</label>
+								<input type="password" class="form-control" id="inputPasswordcheck" name="userPasswordCheck" placeholder="Password check">
+							</div>
+							<div class="col-12">
+								<label for="inputAddress" class="form-label">Address</label>
+								<input type="text" class="form-control" id="inputAddress" name="userAddress" placeholder="Input your address">
+							</div>
+							<div class="col-12">
+								<button class="btn btn-lg btn-secondary btn-block btn-login font-weight-bold mb-2"
+										type="submit">
+									会員登録
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
